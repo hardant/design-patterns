@@ -20,11 +20,6 @@ class Subject {
     private int state;
     private List<Observer> observers = new ArrayList<>();
 
-
-    public int getState() {
-        return state;
-    }
-
     void setState(int state) {
         this.state = state;
         notifyObservers();
